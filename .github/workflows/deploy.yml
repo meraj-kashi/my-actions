@@ -1,0 +1,16 @@
+name: "Test Workflow"
+
+on:
+  workflow_call:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test workflow
+        id: test
+        shell: bash
+        run: |
+          echo "This is a test"
+          echo "::debug::Set the Octocat variable"
